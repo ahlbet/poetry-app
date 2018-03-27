@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Poetry App</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+  <header class="header" role="banner">
+    <h1 class="header__heading">Poetry App</h1>
+    <p class="header__description">An application for searching, writing, and saving poems using the large PoetryDB API.</p>
+  </header>
+
+  <section>
+    <form id="search-poem-form" class="js-search-poem-form">
+      <label for="js-search-author">Author</label>
+      <input id="js-search-author" type="text">
+
+      <label for="js-search-title">Title</label>
+      <input id="js-search-title" type="text">
+
+      <label for="js-search-words">Words</label>
+      <input id="js-search-words" type="text">
+
+      <button id="js-search-submit" type="submit">Search</button>
+    </form>
+  </section>
+
+  <section>
+    <ul class="js-search-output"></ul>
+  </section>
+
+  <section>
+    <ul class="js-saved-poems"></ul>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/store.js"></script>
+  <script src="scripts/poetry.js"></script>
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>
